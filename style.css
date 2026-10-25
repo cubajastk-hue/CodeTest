@@ -146,10 +146,11 @@ button:focus {
 
 /* Image styling */
 .example-image {
-  /* Smaller image placed to the left of the text */
-  float: left;
-  max-width: 250px;
-  margin: 0 20px 20px 0;
+  /* Centered image with responsive size */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
   border: 2px solid #ddd;
   border-radius: 4px;
 }
@@ -206,33 +207,7 @@ img {
 }
 
 /* Active navigation link style (optional, can be toggled via JS) */
-.navbar a.active {
-  background-color: var(--accent);
-  color: var(--light-text);
-  border-radius: 4px;
-  padding: 4px 8px;
-}
-.navbar {
-  background-color: #2c3e50;
-  padding: 10px 0;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.navbar li {
-  margin: 0 15px;
-}
-.navbar a {
-  color: #ecf0f1;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-}
-.navbar a:hover {
-  color: #bdc3c7;
-}
+/* Removed duplicate navbar styles to keep a single consistent definition */
 
  /* Main content */
 main {
@@ -263,26 +238,7 @@ p {
   color: #555;
 }
 
- /* Button */
-/* Primary button styling */
-button {
-  background-color: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 28px;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  transition: background-color 0.3s ease,
-              transform 0.2s ease,
-              box-shadow 0.2s ease;
-}
-button:hover {
-  background-color: #45a049;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+/* Removed duplicate button styles; primary button styling retained earlier */
 
 /* Button focus outline for accessibility */
 button:focus {

@@ -1,0 +1,315 @@
+/* Reset and basic settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use CSS variables for easy theming */
+:root {
+  /* Primary color for navigation and footer */
+  --primary: #2c3e50;
+  /* Light text color used on dark backgrounds */
+  --light-text: #ecf0f1;
+  /* Accent color for buttons and highlights */
+  --accent: #4caf50;
+  /* Background and base text colors */
+  --bg-color: #f7f9fc;
+  --text-color: #333;
+}
+
+/* Base body styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+  padding: 10px 0;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navbar a:hover {
+  color: #bdc3c7;
+}
+.navbar a.active {
+  background-color: var(--accent);
+  color: var(--light-text);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Central container for better width control */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings and paragraphs */
+h1 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Button styling */
+button {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease,
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+button:focus {
+  outline: 2px solid var(--primary);
+}
+
+/* Image styling */
+img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  color: var(--light-text);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+.footer a {
+  color: var(--light-text);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: var(--accent);
+}
+
+/* Card component */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar li {
+    margin: 8px 0;
+  }
+  .container {
+    padding: 20px;
+  }
+}
+/* Smooth transition for navigation links */
+.navbar a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Active navigation link style (optional, can be toggled via JS) */
+.navbar a.active {
+  background-color: var(--accent);
+  color: var(--light-text);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.navbar {
+  background-color: #2c3e50;
+  padding: 10px 0;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.navbar a:hover {
+  color: #bdc3c7;
+}
+
+/* Hlavní obsah */
+main {
+  flex: 1;
+  text-align: center;
+  padding: 30px 20px;
+}
+/* Central container for better width control */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+main {
+  flex: 1;
+  text-align: center;
+  padding: 30px 20px;
+}
+h1 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Tlačítko */
+/* Primary button styling */
+button {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease,
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Button focus outline for accessibility */
+button:focus {
+  outline: 2px solid #2c3e50;
+}
+
+/* Obrázek */
+img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+/* Footer link styling */
+.footer a {
+  color: var(--light-text);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: var(--accent);
+}
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Additional styles */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Responsivní úpravy */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar li {
+    margin: 8px 0;
+  }
+}
+/* Adjust container padding on small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar li {
+    margin: 8px 0;
+  }
+}

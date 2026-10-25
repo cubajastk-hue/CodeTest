@@ -7,15 +7,15 @@
 
 /* Use CSS variables for easy theming */
 :root {
-  /* Primary color for navigation and footer */
-  --primary: #2c3e50;
+  /* Dark theme primary color for navigation and footer */
+  --primary: #0a0a0a;
   /* Light text color used on dark backgrounds */
-  --light-text: #ecf0f1;
-  /* Accent color for buttons and highlights */
-  --accent: #4caf50;
-  /* Background and base text colors */
-  --bg-color: #f7f9fc;
-  --text-color: #333;
+  --light-text: #e0e0e0;
+  /* Accent color for buttons and highlights (purple) */
+  --accent: #bb86fc;
+  /* Dark background and base text colors */
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
 }
 
 /* Base body styling */
@@ -191,7 +191,7 @@ img {
   color: #bdc3c7;
 }
 
-/* Hlavní obsah */
+ /* Main content */
 main {
   flex: 1;
   text-align: center;
@@ -220,7 +220,7 @@ p {
   color: #555;
 }
 
-/* Tlačítko */
+ /* Button */
 /* Primary button styling */
 button {
   background-color: var(--accent);
@@ -246,7 +246,7 @@ button:focus {
   outline: 2px solid #2c3e50;
 }
 
-/* Obrázek */
+ /* Image */
 img {
   max-width: 90%;
   height: auto;
@@ -290,7 +290,7 @@ img {
   max-width: 400px;
 }
 
-/* Responsivní úpravy */
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .navbar ul {
     flex-direction: column;
